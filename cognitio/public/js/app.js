@@ -8,13 +8,12 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 	// home page
 	.when('/', {
 		templateUrl: 'views/inicio.html',
-		controller: 'control1'
+		controller: 'controllogin'
 	})
-
-	// nerds page that will use the NerdController
-	.when('/num2', {
-		templateUrl: 'views/num2.html',
-		controller: 'control2'
+	
+	.when('/registro', {
+		templateUrl: 'views/registro.html',
+		controller: 'controllogin'
 	});
 
 	$locationProvider.html5Mode(true);
