@@ -144,3 +144,10 @@ FOR EACH ROW BEGIN
 SET NEW.id = (SELECT NextVal('seq_feedback'));
 END //
 DELIMITER ;
+
+CREATE TABLE sesiones (
+id VARCHAR(255) COLLATE utf8_bin NOT NULL,
+fecha INT(11) UNSIGNED NOT NULL,
+datos TEXT,
+PRIMARY KEY (id)
+);
