@@ -1,18 +1,15 @@
-//angular.module('mainApp', ['ngRoute', 'rutasApp', 'control1', 'control2', 'servicio2']);
-//mainApp
-var app = angular.module('mainApp', ['ngRoute']);
+var app = angular.module('mainApp', ['ngRoute','ngMaterial','ngMessages']);
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
 	$routeProvider
 
-	// home page
 	.when('/', {
-		templateUrl: 'views/inicio.html',
+		templateUrl: 'views/auth/inicio.html',
 		controller: 'controllogin'
 	})
 	
 	.when('/registro', {
-		templateUrl: 'views/registro.html',
+		templateUrl: 'views/auth/registro.html',
 		controller: 'controllogin'
 	});
 

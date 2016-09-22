@@ -29,6 +29,7 @@ angular.module('mainApp').controller('log', ['$scope','$location','servicioInici
 }]);
 
 angular.module('mainApp').controller('reg', ['$scope','servicioInicio',function($scope,servicioInicio) {
+	
 	$scope.submit = function() {
 		var datos = {
 				correo:$scope.user.correo,
